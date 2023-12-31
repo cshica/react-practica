@@ -1,14 +1,18 @@
+import './App.css'
+import { TwiterFollowCard } from './TwiterFollowCard.jsx'
 export function App()
 {
+    const formatUserName=(userName)=>`@${userName}`
     return (
-        <article>
-            <header>
-                <img alt="El Programador" src="https://pbs.twimg.com/profile_images/1586373389563973632/0bqilLWJ_400x400.jpg"/>
-                <div>
-                    <strong>Acss</strong>
-                    <strong>@bleglaiger</strong>
-                </div>
-            </header>
-        </article>
+        <section className='App'>
+        <TwiterFollowCard isFollowing userName="stardeveloper">
+            Christian Shica
+        </TwiterFollowCard>
+        <TwiterFollowCard isFollowing={false} userName="stardeveloper1" />
+        <TwiterFollowCard isFollowing userName="stardeveloper" />
+        <TwiterFollowCard isFollowing userName="stardeveloper" />
+        <TwiterFollowCard isFollowing userName="stardeveloper" />
+        </section>
+      
     )
 }

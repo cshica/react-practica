@@ -1,0 +1,74 @@
+.cs-follow-card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+
+.cs-follow-card-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cs-follow-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-follow-card-username {
+    opacity: .6;
+}
+
+.cs-follow-card-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.cs-follow-card-btn {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+}
+
+.cs-follow-card-btn:hover {
+    opacity: .8;
+
+}
+
+.cs-follow-card-text {
+    display: block;
+}
+
+.cs-follow-card-btn.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+.cs-follow-card-btn.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+}
+
+.cs-follow-card-btn.is-following:hover .cs-follow-card-text{
+    display: none;
+}
+.cs-follow-card-btn.is-following:hover .cs-follow-card-stopFollow {
+    display: block;
+}
+
+.cs-follow-card-stopFollow{
+    display: none;
+  }
